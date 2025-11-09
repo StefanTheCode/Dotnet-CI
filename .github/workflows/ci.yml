@@ -28,5 +28,8 @@ jobs:
       - name: Build (warnings as errors)
         run: dotnet build --no-restore -c Release /warnaserror
 
+      - name: Test
+        run: dotnet test --no-build -c Release --logger "trx;LogFileName=test_results.trx"
+
       - name: Format (verify)
         run: dotnet format --no-restore --verify-no-changes

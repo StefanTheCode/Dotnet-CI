@@ -1,10 +1,19 @@
-using System; // unused
-using System.Threading.Tasks; // unused
-
 namespace Acme.Calculator
 {
-    public class Calculator
+    /// <summary>
+    /// Calculator description.
+    /// </summary>
+    public static class Calculator
     {
-        public int Add(int a,int b) {  return a + b; } // bad spacing + analyzer warnings
+        /// <summary>
+        /// Sum.
+        /// </summary>
+        /// <param name="a">Number A.</param>
+        /// <param name="b">Number B.</param>
+        /// <returns>Number C = A + B.</returns>
+        public static int Add(int a, int b)
+        {
+            return a + b;
+        }
     }
 }
